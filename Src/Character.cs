@@ -8,8 +8,8 @@ namespace TextAdventure
 
         public string Name 
         { 
-            get => _name; 
-            set => _name = value[0].ToString().ToUpper() + value.Substring(1); 
+            get => _name[0].ToString().ToUpper() + _name.Substring(1); 
+            set => _name = value; 
         }
         
         public Character (string name)
