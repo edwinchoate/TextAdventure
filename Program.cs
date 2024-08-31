@@ -1,17 +1,18 @@
-﻿
+﻿using TextAdventure;
+
 
 Console.WriteLine("Hullo, traveler. What's yer name?");
 
-string name = Console.ReadLine();
+string input = Console.ReadLine();
 
-while (name.Equals(String.Empty) || name == null)
+while (input.Equals(String.Empty) || input == null)
 {
     Console.WriteLine("I apologize. I'm hard of hearing in me old age. Could yah say yer name again?");
-    name = Console.ReadLine();
+    input = Console.ReadLine();
 }
 
-name = name[0].ToString().ToUpper() + name.Substring(1);
+Player player = new Player(input);
 
-string a = "aeiouAEIOU".IndexOf(name[0]) == -1 ? "a" : "an";
-Console.WriteLine($"Aye. You look like {a} {name}.");
+string a = "aeiouAEIOU".IndexOf(player.Name[0]) == -1 ? "a" : "an";
+Console.WriteLine($"Aye. You look like {a} {player.Name}.");
 
