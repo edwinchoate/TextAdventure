@@ -8,7 +8,7 @@ namespace TextAdventure
 
         public string Name 
         { 
-            get => _name[0].ToString().ToUpper() + _name.Substring(1); 
+            get => TextUtils.Capitalize(_name);
             set => _name = value; 
         }
         
