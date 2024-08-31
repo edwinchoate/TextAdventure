@@ -13,6 +13,5 @@ while (name.Equals(String.Empty) || name == null)
 
 Player player = new Player(name);
 
-string a = "aeiouAEIOU".IndexOf(player.Name[0]) == -1 ? "a" : "an";
-Console.WriteLine($"Aye. You look like {a} {player.Name}.");
+Console.WriteLine($"Aye. You look like {TextUtils.AOrAn(player.Name)} {player.Name}.");
 
