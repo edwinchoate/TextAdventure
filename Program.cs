@@ -1,17 +1,18 @@
 ﻿using TextAdventure;
 
+var strings = new EnglishStringResources();
 
-Console.WriteLine("Hullo, traveler. What's yer name?");
+Console.WriteLine(strings.WhatsYourName);
 
 string name = Console.ReadLine();
 
 while (name.Equals(String.Empty) || name == null)
 {
-    Console.WriteLine("I apologize. I'm hard of hearing in me old age. Could yah say yer name again?");
+    Console.WriteLine(strings.WhatsYourName2);
     name = Console.ReadLine();
 }
 
 Player player = new Player(name);
 
-Console.WriteLine($"Aye. You look like {TextUtils.AOrAn(player.Name)} {player.Name}.");
+Console.WriteLine($"{strings.AffirmName} {TextUtils.AOrAn(player.Name)} {player.Name}.");
 
