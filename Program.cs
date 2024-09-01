@@ -1,18 +1,18 @@
 ﻿using TextAdventure;
 
-var strings = new EnglishStringResources();
+TextUtils.LoadStringResources(new EnglishStringResources());
 
-Console.WriteLine(strings.WhatsYourName);
+Console.WriteLine(TextUtils.StringResources.WhatsYourName);
 
 string name = Console.ReadLine();
 
 while (name.Equals(String.Empty) || name == null)
 {
-    Console.WriteLine(strings.WhatsYourName2);
+    Console.WriteLine(TextUtils.StringResources.WhatsYourName2);
     name = Console.ReadLine();
 }
 
 Player player = new Player(name);
 
-Console.WriteLine($"{strings.AffirmName} {TextUtils.AOrAn(player.Name)} {player.Name}.");
+Console.WriteLine($"{TextUtils.StringResources.AffirmName} {TextUtils.AOrAn(player.Name)} {player.Name}.");
 
