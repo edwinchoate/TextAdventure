@@ -14,5 +14,5 @@ while (name.Equals(String.Empty) || name == null)
 
 Player player = new Player(name);
 
-Console.WriteLine($"{TextUtils.StringResources.AffirmName} {TextUtils.AOrAn(player.Name)} {player.Name}.");
+Console.WriteLine(TextUtils.StringResources.AffirmName, TextUtils.AOrAn(player.Name), player.Name);
 
