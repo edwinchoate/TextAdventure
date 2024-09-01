@@ -13,7 +13,7 @@ namespace TextAdventure
 
         public string Name
         {
-            get => TextUtils.Capitalize(_name);
+            get => Text.Capitalize(_name);
             set => _name = value;
         }
 

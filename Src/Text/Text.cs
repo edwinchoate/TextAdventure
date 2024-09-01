@@ -1,7 +1,7 @@
 ﻿
 namespace TextAdventure
 {
-    public static class TextUtils
+    public static class Text
     {
 
         private static StringResources _stringResources;
