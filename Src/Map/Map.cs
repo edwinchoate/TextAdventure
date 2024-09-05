@@ -4,13 +4,14 @@ namespace TextAdventure
     public partial class Map
     {
 
-        private readonly Random _random = new Random(1234);
-
         public Map (Player player)
         {
             Player = player;
         }
 
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public Cell[,] Cells { get; private set; }
         public Player Player { get; }
 
     }

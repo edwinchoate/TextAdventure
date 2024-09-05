@@ -8,5 +8,7 @@ namespace TextAdventure
         public string WhatsYourName2 { get; protected set; } = "";
         public string AffirmName { get; protected set; } = "";
 
+        public string SayDirectionOptions { get; protected set; } = "";
+
     }
 }
