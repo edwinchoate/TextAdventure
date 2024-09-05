@@ -4,7 +4,7 @@ namespace TextAdventure
 
     public abstract class Character
     {
-        private string _name;
+        private string _name = "";
         
         public Character (string name)
         {

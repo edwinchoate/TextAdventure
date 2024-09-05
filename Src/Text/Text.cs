@@ -4,7 +4,7 @@ namespace TextAdventure
     public static class Text
     {
 
-        private static StringResources _stringResources;
+        private static StringResources? _stringResources;
 
         public static StringResources StringResources
         {

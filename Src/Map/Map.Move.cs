@@ -4,7 +4,7 @@ namespace TextAdventure
     public partial class Map
     {
 
-        public Cell CurrentCell { get; set; }
+        public Cell? CurrentCell { get; set; }
 
 
         public void GoToCell (int x, int y)

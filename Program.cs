@@ -4,12 +4,12 @@ Text.LoadStringResources(new EnglishStringResources());
 
 Console.WriteLine(Text.StringResources.WhatsYourName);
 
-string name = Console.ReadLine();
+string name = Console.ReadLine() ?? "";
 
-while (name.Equals(String.Empty) || name == null)
+while (name == null || name.Equals(String.Empty))
 {
     Console.WriteLine(Text.StringResources.WhatsYourName2);
-    name = Console.ReadLine();
+    name = Console.ReadLine() ?? "";
 }
 
 Player player = new Player(name);
