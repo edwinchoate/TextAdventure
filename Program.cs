@@ -13,6 +13,7 @@ while (name.Equals(String.Empty) || name == null)
 }
 
 Player player = new Player(name);
+Map map = new Map(player);
 
 Console.WriteLine(Text.StringResources.AffirmName, Text.AOrAn(player.Name), player.Name);
 
