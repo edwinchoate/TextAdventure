@@ -9,6 +9,7 @@ namespace TextAdventure
             WhatsYourName2 = "I apologize. I'm hard of hearing in me old age. Could yah say yer name again?";
             AffirmName = "Aye. You look like {0} {1}.";
             SayDirectionOptions = "There are passages to the {0}.";
+            CommandNotFound = "You stand there with a look of puzzlement on your face, scratching your head.";
         }
     }
 }
