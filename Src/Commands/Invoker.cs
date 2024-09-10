@@ -1,20 +1,20 @@
 ﻿
 namespace TextAdventure
 {
-    public sealed class Commands
+    public sealed class Invoker
     {
 
-        private static Commands? _instance;
+        private static Invoker? _instance;
         private readonly Dictionary<string, Command> _commands = new Dictionary<string, Command>();
 
-        private Commands() { }
+        private Invoker() { }
 
-        public static Commands Instance
+        public static Invoker Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new Commands();
+                    _instance = new Invoker();
                 return _instance;
             }
         }
@@ -28,7 +28,7 @@ namespace TextAdventure
                 _commands.Add(name, command);
         }
 
-        public void Execute (string[] args)
+        public void Invoke (string[] args)
         {
             if (_commands.ContainsKey(args[0]))
                 _commands[args[0]].Execute(args);
