@@ -10,6 +10,10 @@ namespace TextAdventure
 
         public string SayDirectionOptions { get; protected set; } = "";
         public string CommandNotFound { get; protected set; } = "";
+        public string GoCommandName { get; protected set; } = "";
+        public string GoCommandError { get; protected set; } = "";
+        public string Quit { get; protected set; } = "";
+        public string Farewell { get; protected set; } = "";
 
     }
 }
