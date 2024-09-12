@@ -7,12 +7,12 @@ namespace TextAdventure
         public Cell? CurrentCell { get; set; }
 
 
-        public void GoToCell (int x, int y)
+        public void GoToCell (int index)
         {
             if (CurrentCell != null)
                 CurrentCell.Visited = true;
 
-            CurrentCell = Cells[x, y];
+            CurrentCell = Cells[index];
         }
 
         public void GoToStartingCell ()

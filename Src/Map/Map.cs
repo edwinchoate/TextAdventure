@@ -11,7 +11,7 @@ namespace TextAdventure
 
         public int Width { get; set; }
         public int Height { get; set; }
-        public Cell[,] Cells { get; private set; }
+        public Cell[] Cells { get; private set; }
         public Player Player { get; }
 
     }
