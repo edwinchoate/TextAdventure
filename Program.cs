@@ -16,6 +16,8 @@ while (name == null || name.Equals(String.Empty))
 
 Player player = new Player(name);
 Map map = new Map(player);
+map.GenerateCells(6, 6); // TODO Size the map based on the real content I come up with
+map.GoToStartingCell();
 Invoker.Instance.Register(new Go(map));
 
 Console.WriteLine(Text.StringResources.AffirmName, Text.AOrAn(player.Name), player.Name);
