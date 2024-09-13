@@ -11,7 +11,7 @@ namespace TextAdventure
             Player = player;
         }
         
-        public Cell[] Cells { get; private set; }
+        public Cell[]? Cells { get; private set; }
         public Player Player { get; }
 
     }

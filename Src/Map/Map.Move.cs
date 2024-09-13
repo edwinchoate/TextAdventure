@@ -9,15 +9,23 @@ namespace TextAdventure
 
         public void GoToCell (int index)
         {
-            if (CurrentCell != null)
-                CurrentCell.Visited = true;
+            if (Cells == null)
+                throw new NullReferenceException();
+            else
+            {
+                if (CurrentCell != null)
+                    CurrentCell.Visited = true;
 
-            CurrentCell = Cells[index];
+                CurrentCell = Cells[index];
+            }
         }
 
         public void GoToStartingCell ()
         {
-            CurrentCell = Cells[0]; // TODO Set starting cell based on the actual content I come up with
+            if (Cells == null)
+                throw new NullReferenceException();
+            else 
+                CurrentCell = Cells[0]; // TODO Set starting cell based on the actual content I come up with
         }
 
     }
