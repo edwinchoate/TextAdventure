@@ -14,13 +14,20 @@ namespace TextAdventure
         {
 
             Cells = new Cell[Width*Height];
+    
+            string[]? shortDescriptions = Text.StringResources.CellShortDescriptions;
+
+            if (shortDescriptions == null)
+                throw new NullReferenceException();
+            if (shortDescriptions.Length != Width * Height)
+                throw new Exception("StringResources does not contain the right number of cell short descriptions");
 
             for (int i = 0; i < Cells.Length; i++)
             {
                 int col = i % Width;
                 int row = i / Width;
                 Cell cell = new Cell();
-
+                
                 if (row > 0) // then there's something to the North
                 {
                     cell.Neighbors[Directions.North] = CellIndex(col, row - 1);
@@ -37,6 +44,8 @@ namespace TextAdventure
                 {
                     cell.Neighbors[Directions.West] = CellIndex(col - 1 , row);
                 }
+
+                cell.ShortDescription = shortDescriptions[i];
 
                 Cells[i] = cell;
             }
