@@ -17,7 +17,7 @@ namespace TextAdventure
 
         public void GoToStartingCell ()
         {
-            // TODO Figure out where on the map I want the player to start
+            CurrentCell = Cells[0]; // TODO Set starting cell based on the actual content I come up with
         }
 
     }
