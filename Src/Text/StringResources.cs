@@ -15,5 +15,7 @@ namespace TextAdventure
         public string Quit { get; protected set; } = "";
         public string Farewell { get; protected set; } = "";
 
+        public string[]? CellShortDescriptions { get; protected set; }
+
     }
 }
