@@ -10,10 +10,8 @@ namespace TextAdventure
             return Math.Clamp(col, -1, Width) + Math.Clamp(row, -1, Height) * Width; 
         }
 
-        public void GenerateCells (int width, int height)
+        public void GenerateCells ()
         {
-            Width = width;
-            Height = height;
 
             Cells = new Cell[Width*Height];
 
