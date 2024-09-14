@@ -14,20 +14,22 @@ namespace TextAdventure
             GoCommandError = "Blast! You can't go that way.";
             Quit = "quit";
             Farewell = "Fare thee well, young traveler. Until we meet again.";
+            PassagesDescIntro = "There are passages to the";
+            And = "and";
 
             CellShortDescriptions = new string[Map.Width * Map.Height] {
-                "You're in a park",
-                "You're in a forest",
-                "You're in a city",
-                "You're in a desert",
-                "You're on a gravel road",
-                "You're at a dock",
-                "You're at a train station",
-                "You're at a marketplace",
-                "You're walking along a highway",
-                "You're at a barn",
-                "You're at a busy festival",
-                "You're in a small village",
+                "You're in a park.",
+                "You're in a forest.",
+                "You're in a city.",
+                "You're in a desert.",
+                "You're on a gravel road.",
+                "You're at a dock.",
+                "You're at a train station.",
+                "You're at a marketplace.",
+                "You're walking along a highway.",
+                "You're at a barn.",
+                "You're at a busy festival.",
+                "You're in a small village.",
             };
         }
     }
