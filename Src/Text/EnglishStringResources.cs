@@ -14,6 +14,7 @@ namespace TextAdventure
             GoCommandError = "Blast! You can't go that way.";
             Quit = "quit";
             Farewell = "Fare thee well, young traveler. Until we meet again.";
+            PassageDescIntro = "There's a passage to the";
             PassagesDescIntro = "There are passages to the";
             And = "and";
 

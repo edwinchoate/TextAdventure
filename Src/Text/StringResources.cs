@@ -14,6 +14,7 @@ namespace TextAdventure
         public string GoCommandError { get; protected set; } = "";
         public string Quit { get; protected set; } = "";
         public string Farewell { get; protected set; } = "";
+        public string PassageDescIntro { get; protected set; } = "";
         public string PassagesDescIntro { get; protected set; } = "";
         public string And { get; protected set; } = "";
 
