@@ -33,7 +33,7 @@ namespace TextAdventure
             string[] openPassages = (
                 from d in directionStrings 
                 where Neighbors[(Directions)Enum.Parse(typeof(Directions), d)] > -1 
-                select d
+                select d.ToLower()
             ).ToArray();
 
             sb.Append("\n");
