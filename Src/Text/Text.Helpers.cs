@@ -14,11 +14,13 @@ namespace TextAdventure
             return "aeiouAEIOU".IndexOf(nextWord[0]) == -1 ? "a" : "an";
         }
 
-        public static string CommaSeparatedList(string[] words)
+        public static string CommaSeparatedList(string[] words, string conjunction)
         {
+            string oxfordComma = words.Length > 2 ? "," : "";
+
             return String.Concat(
                 String.Join(", ", words, 0, words.Length - 1),
-                $" {Text.StringResources.And} ",
+                String.Format("{0} {1} ", oxfordComma, conjunction),
                 words[words.Length - 1]
             );
         }
