@@ -12,15 +12,10 @@ namespace TextAdventure
 
         public void GenerateCells ()
         {
+            string[] shortDescriptions = Text.StringResources.CellShortDescriptions ?? [];
 
-            Cells = new Cell[Width*Height];
-    
-            string[]? shortDescriptions = Text.StringResources.CellShortDescriptions;
-
-            if (shortDescriptions == null)
-                throw new NullReferenceException();
-            if (shortDescriptions.Length != Width * Height)
-                throw new Exception("StringResources does not contain the right number of cell short descriptions");
+            if (shortDescriptions.Length <= Width * Height)
+                throw new IndexOutOfRangeException();
 
             for (int i = 0; i < Cells.Length; i++)
             {
