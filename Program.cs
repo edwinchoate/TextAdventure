@@ -26,15 +26,10 @@ Cell? lastCell = null;
 
 while(gameRunning)
 {
-    if (map.CurrentCell == null)
-        throw new NullReferenceException();
-    else
+    if (lastCell != map.CurrentCell)
     {
-        if (lastCell != map.CurrentCell)
-        {
-            lastCell = map.CurrentCell;
-            Console.WriteLine(map.CurrentCell.ToString());
-        }
+        lastCell = map.CurrentCell;
+        Console.WriteLine(map.CurrentCell?.ToString());
     }
 
     string input = Console.ReadLine() ?? "";
