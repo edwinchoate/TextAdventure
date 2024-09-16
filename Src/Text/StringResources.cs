@@ -17,6 +17,7 @@ namespace TextAdventure
         public string PassageDescIntro { get; protected set; } = "";
         public string PassagesDescIntro { get; protected set; } = "";
         public string And { get; protected set; } = "";
+        public string DefaultShortDescription { get; protected set; } = "";
 
         public string[]? CellShortDescriptions { get; protected set; }
 

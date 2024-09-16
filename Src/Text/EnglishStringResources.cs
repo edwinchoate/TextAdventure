@@ -14,11 +14,12 @@ namespace TextAdventure
             GoCommandError = "Blast! You can't go that way.";
             Quit = "quit";
             Farewell = "Fare thee well, young traveler. Until we meet again.";
-            PassageDescIntro = "There's a passage to the";
-            PassagesDescIntro = "There are passages to the";
+            PassageDescIntro = "There's a passage to the {0}";
+            PassagesDescIntro = "There are passages to the {0}";
             And = "and";
+            DefaultShortDescription = "You're walking along a gravel road.";
 
-            CellShortDescriptions = new string[Map.Width * Map.Height] {
+            CellShortDescriptions = [
                 "You're in a park.",
                 "You're in a forest.",
                 "You're in a city.",
@@ -31,7 +32,7 @@ namespace TextAdventure
                 "You're at a barn.",
                 "You're at a busy festival.",
                 "You're in a small village.",
-            };
+            ];
         }
     }
 }

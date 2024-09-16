@@ -40,13 +40,15 @@ namespace TextAdventure
 
             if (openPassages.Length > 1)
             {
-                sb.Append($"{Text.StringResources.PassagesDescIntro} ")
-                  .Append(Text.CommaSeparatedList(openPassages, Text.StringResources.And));
+                sb.Append(
+                    String.Format(
+                        Text.StringResources.PassagesDescIntro, 
+                        Text.CommaSeparatedList(openPassages, Text.StringResources.And))
+                );
             }
             else
             {
-                sb.Append($"{Text.StringResources.PassageDescIntro} ")
-                  .Append(openPassages[0]);
+                sb.Append(String.Format(Text.StringResources.PassageDescIntro, openPassages[0]));
             }
 
             sb.Append(".");
