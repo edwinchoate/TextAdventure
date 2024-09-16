@@ -14,7 +14,7 @@ namespace TextAdventure
         {
             string[] shortDescriptions = Text.StringResources.CellShortDescriptions ?? [];
 
-            if (shortDescriptions.Length <= Width * Height)
+            if (shortDescriptions.Length < Width * Height)
                 throw new IndexOutOfRangeException();
 
             for (int i = 0; i < Cells.Length; i++)
