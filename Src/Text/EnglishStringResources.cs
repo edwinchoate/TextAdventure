@@ -17,7 +17,6 @@ namespace TextAdventure
             PassageDescIntro = "There's a passage to the {0}";
             PassagesDescIntro = "There are passages to the {0}";
             And = "and";
-            DefaultShortDescription = "You're walking along a gravel road.";
 
             CellShortDescriptions = [
                 "You're in a park.",
