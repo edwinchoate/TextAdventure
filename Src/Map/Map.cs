@@ -9,9 +9,10 @@ namespace TextAdventure
         public Map (Player player)
         {
             Player = player;
+            Cells = new Cell[Width*Height];
         }
         
-        public Cell[]? Cells { get; private set; }
+        public Cell[] Cells { get; private set; }
         public Player Player { get; }
 
     }
