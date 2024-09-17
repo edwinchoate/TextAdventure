@@ -3,6 +3,7 @@
     public interface IInventory
     {
         int ItemCount { get; }
+        string[] ItemNames { get; }
 
         void Add(Item item);
         bool Contains(string itemName);

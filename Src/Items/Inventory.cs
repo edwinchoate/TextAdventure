@@ -8,6 +8,8 @@ namespace TextAdventure
 
         public int ItemCount => Items.Count;
 
+        public string[] ItemNames => Items.Select(i => i.Name).ToArray();
+
         public void Add(Item item)
         {
             Items.Add(item);

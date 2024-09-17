@@ -13,6 +13,8 @@ namespace TextAdventure
 
         public int ItemCount => _inventory.ItemCount;
 
+        public string[] ItemNames => _inventory.ItemNames;
+
         public void Add(Item item)
         {
             _inventory.Add(item);
