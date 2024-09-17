@@ -6,9 +6,9 @@ namespace TextAdventure
 
         public virtual string Name { get; set; } = "";
 
-        public bool CanReuse { get; set; }
+        public bool Takeable { get; set; } = true;
 
-        public bool CanTake { get; set; } = true;
+        public bool Reusable { get; set; }
 
         public virtual void Use (string user)
         {

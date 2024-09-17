@@ -17,6 +17,7 @@ namespace TextAdventure
             PassageDescIntro = "There's a passage to the {0}";
             PassagesDescIntro = "There are passages to the {0}";
             And = "and";
+            NoItemToUse = "You looked in your bag for {0} {1}, but alas... there are none to be found.";
 
             CellShortDescriptions = [
                 "You're in a park.",
