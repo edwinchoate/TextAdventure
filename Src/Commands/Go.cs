@@ -10,7 +10,7 @@ namespace TextAdventure
             _map = map;
         }
 
-        public override string Name { get => Text.StringResources.GoCommandName; }
+        public override string Name => Text.StringResources.GoCommandName;
 
         public override void Execute(string[] args)
         {
