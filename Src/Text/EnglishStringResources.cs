@@ -12,6 +12,8 @@ namespace TextAdventure
             CommandNotFound = "You stand there with a look of puzzlement on your face, scratching your head.";
             GoCommandName = "Go";
             GoCommandError = "Blast! You can't go that way.";
+            BagCommandName = "Bag";
+            BagSummary = "You've got ({0}) items in your bag.";
             Quit = "quit";
             Farewell = "Fare thee well, young traveler. Until we meet again.";
             PassageDescIntro = "There's a passage to the {0}";

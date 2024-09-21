@@ -19,6 +19,7 @@ Map map = new Map(player);
 map.GenerateCells(); 
 map.GoToStartingCell();
 Invoker.Instance.Register(new Go(map));
+Invoker.Instance.Register(new Bag(player));
 
 Console.WriteLine(Text.StringResources.AffirmName, Text.AOrAn(player.Name), player.Name);
 

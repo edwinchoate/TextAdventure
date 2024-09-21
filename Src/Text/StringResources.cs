@@ -12,6 +12,8 @@ namespace TextAdventure
         public string CommandNotFound { get; protected set; } = ""; // TODO Implement multiple CommandNotFound flavor texts, printed at random
         public string GoCommandName { get; protected set; } = "";
         public string GoCommandError { get; protected set; } = "";
+        public string BagCommandName { get; protected set; } = "";
+        public string BagSummary { get; protected set; } = "";
         public string Quit { get; protected set; } = "";
         public string Farewell { get; protected set; } = "";
         public string PassageDescIntro { get; protected set; } = "";
