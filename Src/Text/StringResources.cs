@@ -20,6 +20,11 @@ namespace TextAdventure
         public string PassagesDescIntro { get; protected set; } = "";
         public string And { get; protected set; } = "";
         public string NoItemToUse { get; protected set; } = "";
+        public string Chest { get; protected set; } = "";
+        public string YouUnlockedChest { get; protected set; } = "";
+        public string ChestIsEmpty { get; protected set; } = ""; 
+        public string Key { get; protected set; } = "";
+        public string ItemAcquired { get; protected set; } = "";
 
         public string[]? CellShortDescriptions { get; protected set; }
 
