@@ -43,7 +43,7 @@ namespace TextAdventure
                         if (item != null)
                         {
                             _map.Player.Add(item);
-                            Console.WriteLine(String.Format(Text.StringResources.ItemAcquired), itemName);
+                            Console.WriteLine(String.Format(Text.StringResources.ItemAcquired, itemName));
                         }
                     }
                 }
