@@ -6,6 +6,8 @@ namespace TextAdventure
         public const int Width = 4; // TODO Size the map based on the real content I come up with
         public const int Height = 3;
 
+        public readonly Random _random = new Random();
+
         public Map (Player player)
         {
             Player = player;

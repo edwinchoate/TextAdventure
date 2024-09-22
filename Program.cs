@@ -16,8 +16,17 @@ while (name == null || name.Equals(String.Empty))
 
 Player player = new Player(name);
 Map map = new Map(player);
+
 map.GenerateCells(); 
 map.GoToStartingCell();
+
+List<Item> items = new List<Item>()
+{
+    new Key(map),
+    new Chest([new Gold(100)], map),
+};
+map.PopulateItems(items);
+
 Invoker.Instance.Register(new Go(map));
 Invoker.Instance.Register(new Bag(player));
 

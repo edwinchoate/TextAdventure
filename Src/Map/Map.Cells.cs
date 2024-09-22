@@ -47,5 +47,20 @@ namespace TextAdventure
 
         }
 
+        public void PopulateItems (List<Item> items)
+        {
+            int i = 0;
+
+            while (i < items.Count)
+            {
+                Cell randomCell = Cells[_random.Next(0, Cells.Length)];
+
+                if (randomCell.ItemCount == 0)
+                {
+                    randomCell.Add(items[i]);
+                    i++;
+                }
+            }
+        }
     }
 }
