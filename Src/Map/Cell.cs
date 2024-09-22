@@ -68,6 +68,15 @@ namespace TextAdventure
             //else
             //  sb.Append(LongDescription);
 
+            if (ItemCount > 0)
+            {
+                sb.Append('\n');
+                
+                sb.Append(Text.StringResources.YouSee + " ");
+
+                sb.Append(Text.CommaSeparatedList(ItemNames, Text.StringResources.And));
+            }
+
             string[] directionStrings = Enum.GetNames(typeof(Directions));
 
             string[] openPassages = (
@@ -76,7 +85,7 @@ namespace TextAdventure
                 select d.ToLower()
             ).ToArray();
 
-            sb.Append("\n");
+            sb.Append('\n');
 
             if (openPassages.Length > 1)
             {
@@ -91,7 +100,7 @@ namespace TextAdventure
                 sb.Append(String.Format(Text.StringResources.PassageDescIntro, openPassages[0]));
             }
 
-            sb.Append(".");
+            sb.Append('.');
 
             return sb.ToString();
         }
