@@ -15,7 +15,13 @@ namespace TextAdventure
 
         public override void Execute(string[] args)
         {
-            Console.WriteLine(String.Format(Text.StringResources.BagSummary, _inventory.ItemCount.ToString()));
+            int itemCount = _inventory.ItemCount;
+
+            Console.WriteLine(
+                String.Format(
+                    Text.StringResources.BagSummary, itemCount.ToString(), Text.SingularOrPlural(Text.StringResources.Item, itemCount)
+                )
+            );
             
             foreach (string item in _inventory.ItemNames)
             {

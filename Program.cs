@@ -29,6 +29,7 @@ map.PopulateItems(items);
 
 Invoker.Instance.Register(new Go(map));
 Invoker.Instance.Register(new Bag(player));
+Invoker.Instance.Register(new Take(map));
 
 Console.WriteLine(Text.StringResources.AffirmName, Text.AOrAn(player.Name), player.Name);
 

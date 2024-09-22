@@ -14,11 +14,16 @@ namespace TextAdventure
         public string GoCommandError { get; protected set; } = "";
         public string BagCommandName { get; protected set; } = "";
         public string BagSummary { get; protected set; } = "";
+        public string TakeCommandName { get; protected set; } = "";
+        public string TakeError { get; protected set; } = "";
+        public string TookDesc { get; protected set; } = "";
+        public string CantTake { get; protected set; } = "";
         public string Quit { get; protected set; } = "";
         public string Farewell { get; protected set; } = "";
         public string PassageDescIntro { get; protected set; } = "";
         public string PassagesDescIntro { get; protected set; } = "";
         public string And { get; protected set; } = "";
+        public string Item { get; protected set; } = "";
         public string NoItemToUse { get; protected set; } = "";
         public string Chest { get; protected set; } = "";
         public string YouUnlockedChest { get; protected set; } = "";

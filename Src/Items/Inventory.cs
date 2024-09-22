@@ -24,7 +24,7 @@ namespace TextAdventure
         {
             foreach (Item item in Items)
             {
-                if (item?.Name == itemName) return item;
+                if (String.Equals(item?.Name, itemName, StringComparison.OrdinalIgnoreCase)) return item;
             }
             return null;
         }
