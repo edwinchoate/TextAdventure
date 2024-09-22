@@ -26,11 +26,18 @@ namespace TextAdventure
         {
             string oxfordComma = words.Length > 2 ? "," : "";
 
-            return String.Concat(
-                String.Join(", ", words, 0, words.Length - 1),
-                String.Format("{0} {1} ", oxfordComma, conjunction),
-                words[words.Length - 1]
-            );
+            if (words.Length == 0)
+                return "";
+            else if (words.Length == 1)
+                return words[0];
+            else
+            {
+                return String.Concat(
+                    String.Join(", ", words, 0, words.Length - 1),
+                    String.Format("{0} {1} ", oxfordComma, conjunction),
+                    words[words.Length - 1]
+                );
+            }
         }
 
     }
