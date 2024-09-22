@@ -18,6 +18,9 @@ namespace TextAdventure
             TakeError = "There's nothing to take.";
             TookDesc = "You took the {0}.";
             CantTake = "You can't take the {0}.";
+            UseCommandName = "Use";
+            UseError = "You can't use that.";
+            ItemUsed = "You used the {0}.";
             Quit = "quit";
             Farewell = "Fare thee well, young traveler. Until we meet again.";
             PassageDescIntro = "There's a passage to the {0}";
@@ -29,7 +32,7 @@ namespace TextAdventure
             YouUnlockedChest = "You put the key into the keyhole of the chest, turned it, and... click! You unlocked the chest.";
             ChestIsEmpty = "You peered into the chest... there's nothing in it.";
             Key = "Key";
-            Gold = "{0} gold {coins}";
+            Gold = "{0} gold {1}";
             Coin = "coin";
             YouSee = "You see";
             ItemAcquired = "You got a {0}.";

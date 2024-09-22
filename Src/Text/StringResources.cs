@@ -18,6 +18,9 @@ namespace TextAdventure
         public string TakeError { get; protected set; } = "";
         public string TookDesc { get; protected set; } = "";
         public string CantTake { get; protected set; } = "";
+        public string UseCommandName { get; protected set; } = "";
+        public string UseError { get; protected set; } = "";
+        public string ItemUsed { get; protected set; } = "";
         public string Quit { get; protected set; } = "";
         public string Farewell { get; protected set; } = "";
         public string PassageDescIntro { get; protected set; } = "";
