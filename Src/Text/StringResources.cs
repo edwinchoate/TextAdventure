@@ -24,6 +24,9 @@ namespace TextAdventure
         public string YouUnlockedChest { get; protected set; } = "";
         public string ChestIsEmpty { get; protected set; } = ""; 
         public string Key { get; protected set; } = "";
+        public string Gold { get; protected set; } = "";
+        public string Coin { get; protected set; } = "";
+        public string YouSee { get; protected set; } = "";
         public string ItemAcquired { get; protected set; } = "";
 
         public string[]? CellShortDescriptions { get; protected set; }

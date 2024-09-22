@@ -24,6 +24,9 @@ namespace TextAdventure
             YouUnlockedChest = "You put the key into the keyhole of the chest, turned it, and... click! You unlocked the chest.";
             ChestIsEmpty = "You peered into the chest... there's nothing in it.";
             Key = "Key";
+            Gold = "{0} gold {coins}";
+            Coin = "coin";
+            YouSee = "You see";
             ItemAcquired = "You got a {0}.";
 
             CellShortDescriptions = [
