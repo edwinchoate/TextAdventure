@@ -19,7 +19,7 @@ namespace TextAdventure
             PassageDescIntro = "There's a passage to the {0}";
             PassagesDescIntro = "There are passages to the {0}";
             And = "and";
-            NoItemToUse = "You looked in your bag for {0} {1}, but alas... there are none to be found.";
+            NoItemToUse = "You don't have {0} {1} to use.";
             Chest = "Chest";
             YouUnlockedChest = "You put the key into the keyhole of the chest, turned it, and... click! You unlocked the chest.";
             ChestIsEmpty = "You peered into the chest... there's nothing in it.";
