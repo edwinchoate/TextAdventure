@@ -72,7 +72,7 @@ namespace TextAdventure
             {
                 sb.Append('\n');
                 
-                sb.Append(Text.StringResources.YouSee + " ");
+                sb.Append(Text.StringResources.YouSee + ": ");
 
                 sb.Append(Text.CommaSeparatedList(ItemNames, Text.StringResources.And));
             }
