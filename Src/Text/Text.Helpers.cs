@@ -14,6 +14,14 @@ namespace TextAdventure
             return "aeiouAEIOU".IndexOf(nextWord[0]) == -1 ? "a" : "an";
         }
 
+        public static string SingularOrPlural (string original, int n)
+        {
+            if (n >= 2)
+                return original + "s";
+            else
+                return original;
+        }
+
         public static string CommaSeparatedList(string[] words, string conjunction)
         {
             string oxfordComma = words.Length > 2 ? "," : "";
